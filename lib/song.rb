@@ -3,9 +3,14 @@ class Song
 @@genre = []
 @@artist = []
 
-# def initialize
-#     @@count += 1
-#   end
+def initialize
+    @@count += 1
+    @name = name
+    @artist = artist
+    @@artist << artist
+    @genre = genre
+    @@genre << genre
+  end
 
   def self.genre_count
     @@genre.inject(Hash.new(0)) { |total, i| total[i] += 1; total}
@@ -17,7 +22,8 @@ def self.count
 end
 
 
-  def artist
+  def self.artist
+    @@artist.unique
 
   end
 
