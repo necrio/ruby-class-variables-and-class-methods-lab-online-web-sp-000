@@ -25,13 +25,13 @@ end
 
 
   def self.artist
-    @@artist.unique
+    @@artist.uniq
 
   end
 
 
   def genre
-@@genre.unique
+@@genre.uniq
   end
 
 end
