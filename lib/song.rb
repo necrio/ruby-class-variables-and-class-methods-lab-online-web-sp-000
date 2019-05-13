@@ -5,11 +5,11 @@ def initialize
     @@count += 1
   end
 
+def self.count
+  @@count
 
-  def name
 
-
-  end
+end
 
 
   def artist
