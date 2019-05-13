@@ -9,23 +9,31 @@ def initialize(name, artist, genre)
     @name = song_name
     @artist = artist
     @genre = genre
+    @@count += 1
     @@artists << artist
     @@genres << genre
-    @@count += 1
+    
+  end
 
-
+  def self.count
+    @@count
+  end
+  
+  
+  def self.artist
+    @@artist.uniq
   end
 
   def self.genre_count
-    @@genre.inject(Hash.new(0)) { |total, i| total[i] += 1; total}
+    genre_count = Hash.new(0)
+    @@genres.count {|genre| genre_count[genre] += 1}
+    genre_count
   end
 
-
-def self.count
-  @@count
-end
-  def self.artist
-    @@artist.uniq
+  def self.artist_count
+    artist_count = Hash.new(0)
+    @@artists.count {|artist|artist_count[artist] += 1}
+    artist_count
   end
 
   def genre
