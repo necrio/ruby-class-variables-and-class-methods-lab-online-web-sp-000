@@ -6,6 +6,7 @@ def initialize
     @@count += 1
   end
 
+
 def self.count
   @@count
 
@@ -19,7 +20,7 @@ end
 
 
   def genre
-
+@@genre.unique
   end
 
 
