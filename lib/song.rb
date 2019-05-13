@@ -5,12 +5,12 @@ class Song
 
 
   end
-  
+
 
   def artist
 
   end
-  
+
 
   def genre
 
