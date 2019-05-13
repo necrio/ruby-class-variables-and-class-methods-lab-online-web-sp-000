@@ -23,6 +23,9 @@ def initialize(name, artist, genre)
   def self.artist
     @@artists.uniq
   end
+  def genre
+@@genres.uniq
+  end
 
   def self.genre_count
     genre_count = Hash.new(0)
@@ -36,8 +39,6 @@ def initialize(name, artist, genre)
     artist_count
   end
 
-  def genre
-@@genres.uniq
-  end
+
 
 end
