@@ -21,10 +21,10 @@ def initialize(name, artist, genre)
   end
 
 
-  def self.artist
+  def self.artist(artist)
     @@artists.uniq
   end
-  def genre
+  def genre(genre)
 @@genres.uniq
   end
 
