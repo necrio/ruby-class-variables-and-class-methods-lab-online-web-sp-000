@@ -10,7 +10,7 @@ def initialize
     @@artist << artist
     @genre = genre
     @@genre << genre
-  
+
   attr_accessor :name, :artist, :genre
   end
 
@@ -25,24 +25,9 @@ end
   def self.artist
     @@artist.uniq
   end
-  
+
   def genre
 @@genre.uniq
   end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
