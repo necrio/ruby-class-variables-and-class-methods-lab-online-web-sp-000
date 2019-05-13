@@ -10,7 +10,7 @@ def initialize
     @@artist << artist
     @genre = genre
     @@genre << genre
-  end
+  
   attr_accessor :name, :artist, :genre
   end
 
@@ -22,14 +22,10 @@ def initialize
 def self.count
   @@count
 end
-
-
   def self.artist
     @@artist.uniq
-
   end
-
-
+  
   def genre
 @@genre.uniq
   end
